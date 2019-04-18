@@ -10,7 +10,7 @@ end
 
 def current_player(board)
   num_turns = turn_count(board)
-  num_turns == "X"
+  num_turns % 2 == 0
   if num_turns % 2 == 0 
     "X"
   else
